@@ -24,4 +24,5 @@ class CalendarDay extends Component {
     );
   }
 }
+
 export default CalendarDay;

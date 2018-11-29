@@ -43,7 +43,7 @@ class App extends Component {
 
   handleBack = () => {
     this.resetActiveDay();
-    window.history.replaceState({}, '', '/');
+    window.history.replaceState({}, '', data.appPath);
   };
 
   setActiveDay = activeDay => {

@@ -3,13 +3,15 @@ import { FadeIn } from 'react-anim-kit';
 
 import giftIcon from '../images/icons/gift.svg';
 
+import data from '../data/data.json';
+
 import './CalendarDayDetail.css';
 
 class CalendarDayDetail extends Component {
   handleClick = () => {
     const { resetActiveDay } = this.props;
+    window.history.replaceState({}, '', data.appPath);
     resetActiveDay();
-    window.history.replaceState({}, '', '/');
   };
 
   render() {

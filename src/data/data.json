@@ -1,5 +1,6 @@
 {
   "name": "Heidi",
+  "appPath": "/christmas-calendar",
   "coverImage": "/christmas.jpg",
   "calendar": [
     {
