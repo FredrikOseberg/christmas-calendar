@@ -10,6 +10,8 @@ import './App.css';
 
 import olaf from './images/olaf.png';
 import mikke from './images/mikke.gif';
+import sled from './images/santassled.png';
+import heartIcon from './images/icons/heart.svg';
 
 import data from './data/data.json';
 
@@ -21,10 +23,17 @@ class App extends Component {
 
   componentDidMount() {
     window.addEventListener('popstate', this.handleBack);
+
+    const opened = this.getItemFromLocalStorage('opened');
+
+    if (opened && opened.length > 0) {
+      this.setState({ opened });
+    }
   }
 
   handleBack = () => {
     this.resetActiveDay();
+    window.history.replaceState({}, '', '');
   };
 
   setActiveDay = activeDay => {
@@ -33,7 +42,22 @@ class App extends Component {
     const inArray = opened.includes(activeDay.id);
     if (!inArray) opened.push(activeDay.id);
 
-    this.setState({ activeDay, opened });
+    this.setState({ activeDay, opened }, this.saveStateToLocalStorage);
+  };
+
+  saveStateToLocalStorage = () => {
+    const { opened } = this.state;
+    if (localStorage) {
+      localStorage.setItem('opened', JSON.stringify(opened));
+    }
+  };
+
+  getItemFromLocalStorage = key => {
+    if (localStorage) {
+      const item = localStorage.getItem(key);
+
+      return JSON.parse(item);
+    }
   };
 
   resetActiveDay = () => this.setState({ activeDay: null });
@@ -59,11 +83,17 @@ class App extends Component {
         <ConditionallyRender
           ifTrue={!activeDay}
           show={
-            <FadeIn left by={300} delayBy={0.3}>
+            <FadeIn left by={300} delayBy={0.1}>
               <div className="app-container">
                 <img src={olaf} alt="olaf" className="app-image-left" />
                 {this.renderDays()}
                 <img src={mikke} alt="olaf" className="app-image-right" />
+                <div className="app-bottom-image__container">
+                  <img src={sled} alt="santas sled" className="app-image-bottom" />
+                </div>
+                <p className="app-made-with__paragraph">
+                  Made with <img src={heartIcon} alt="heart" />
+                </p>
               </div>
             </FadeIn>
           }

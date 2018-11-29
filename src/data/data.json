@@ -1,4 +1,6 @@
 {
+  "name": "Heidi",
+  "coverImage": "/christmas.jpg",
   "calendar": [
     {
       "id": 1,
@@ -32,6 +34,114 @@
     },
     {
       "id": 6,
+      "mainImage": "/Australia/3.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "Se i julesokken din"
+    },
+    {
+      "id": 7,
+      "mainImage": "/Australia/1.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "30 min massasje"
+    },
+    {
+      "id": 8,
+      "mainImage": "/Australia/2.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "Jeg lager middag"
+    },
+    {
+      "id": 9,
+      "mainImage": "/Australia/3.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "Se i julesokken din"
+    },
+    {
+      "id": 10,
+      "mainImage": "/Australia/1.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "30 min massasje"
+    },
+    {
+      "id": 11,
+      "mainImage": "/Australia/2.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "Jeg lager middag"
+    },
+    {
+      "id": 12,
+      "mainImage": "/Australia/3.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "Se i julesokken din"
+    },
+    {
+      "id": 13,
+      "mainImage": "/Australia/1.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "30 min massasje"
+    },
+    {
+      "id": 14,
+      "mainImage": "/Australia/2.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "Jeg lager middag"
+    },
+    {
+      "id": 15,
+      "mainImage": "/Australia/3.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "Se i julesokken din"
+    },
+    {
+      "id": 16,
+      "mainImage": "/Australia/1.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "30 min massasje"
+    },
+    {
+      "id": 17,
+      "mainImage": "/Australia/2.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "Jeg lager middag"
+    },
+    {
+      "id": 18,
+      "mainImage": "/Australia/3.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "Se i julesokken din"
+    },
+    {
+      "id": 19,
+      "mainImage": "/Australia/1.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "30 min massasje"
+    },
+    {
+      "id": 20,
+      "mainImage": "/Australia/2.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "Jeg lager middag"
+    },
+    {
+      "id": 21,
+      "mainImage": "/Australia/3.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "Se i julesokken din"
+    },
+    {
+      "id": 22,
+      "mainImage": "/Australia/1.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "30 min massasje"
+    },
+    {
+      "id": 23,
+      "mainImage": "/Australia/2.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "Jeg lager middag"
+    },
+    {
+      "id": 24,
       "mainImage": "/Australia/3.jpg",
       "secondaryImage": "/snipp.png",
       "text": "Se i julesokken din"
