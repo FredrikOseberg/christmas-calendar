@@ -1,32 +1,26 @@
-.App {
-  text-align: center;
+html,
+body {
+  font-family: 'Marck Script', cursive;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  max-width: 1040px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 100px 0 200px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.app-image-left {
+  width: 200px;
+  position: absolute;
+  transform: translateX(-275px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-image-right {
+  width: 300px;
+  position: absolute;
+  right: 0;
+  transform: translateX(275px) translateY(50px);
 }

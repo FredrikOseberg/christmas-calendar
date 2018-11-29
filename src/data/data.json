@@ -1,0 +1,40 @@
+{
+  "calendar": [
+    {
+      "id": 1,
+      "mainImage": "/Australia/1.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "30 min massasje"
+    },
+    {
+      "id": 2,
+      "mainImage": "/Australia/2.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "Jeg lager middag"
+    },
+    {
+      "id": 3,
+      "mainImage": "/Australia/3.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "Se i julesokken din"
+    },
+    {
+      "id": 4,
+      "mainImage": "/Australia/1.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "30 min massasje"
+    },
+    {
+      "id": 5,
+      "mainImage": "/Australia/2.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "Jeg lager middag"
+    },
+    {
+      "id": 6,
+      "mainImage": "/Australia/3.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "Se i julesokken din"
+    }
+  ]
+}

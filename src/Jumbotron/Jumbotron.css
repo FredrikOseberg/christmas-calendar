@@ -1,0 +1,13 @@
+.jumbotron {
+  background-image: url('../images/christmas.jpg');
+  background-size: cover;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.jumbotron h1 {
+  font-size: 3rem;
+}
