@@ -1,7 +1,7 @@
 # Christmas Calendar
 
 This is the repository for a configurable digital christmas calendar that you can use for your loved ones (or a really, really good friend). You can find a demo
-[here](https://github.com/CityOfZion/neon-wallet/pull/1657), if you can stomach the romantic pictures of me and my girlfriend.
+[here](https://fredrikoseberg.github.io/christmas-calendar), if you can stomach the romantic pictures of me and my girlfriend.
 
 ## How it works
 
