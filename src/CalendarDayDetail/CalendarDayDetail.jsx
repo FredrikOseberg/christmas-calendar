@@ -6,8 +6,14 @@ import giftIcon from '../images/icons/gift.svg';
 import './CalendarDayDetail.css';
 
 class CalendarDayDetail extends Component {
+  handleClick = () => {
+    const { resetActiveDay } = this.props;
+    resetActiveDay();
+    window.history.replaceState({}, '', '/');
+  };
+
   render() {
-    const { id, mainImage, secondaryImage, text, resetActiveDay } = this.props;
+    const { id, mainImage, secondaryImage, text } = this.props;
     return (
       <div className="calendar-day-detail__container">
         <FadeIn left by={300} delayBy={0.3}>
@@ -32,7 +38,7 @@ class CalendarDayDetail extends Component {
               </div>
             </div>
           </div>
-          <button className="calendar-day-detail__button" onClick={resetActiveDay}>
+          <button className="calendar-day-detail__button" onClick={this.handleClick}>
             Tilbake
           </button>
         </FadeIn>

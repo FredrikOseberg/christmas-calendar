@@ -26,14 +26,24 @@ class App extends Component {
 
     const opened = this.getItemFromLocalStorage('opened');
 
-    if (opened && opened.length > 0) {
-      this.setState({ opened });
-    }
+    setTimeout(() => {
+      if (opened && opened.length > 0) {
+        this.setState({ opened });
+      }
+
+      if (window.location.pathname !== '/') {
+        this.setAppState();
+      }
+    }, 0);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('popstate', this.handleBack);
   }
 
   handleBack = () => {
     this.resetActiveDay();
-    window.history.replaceState({}, '', '');
+    window.history.replaceState({}, '', '/');
   };
 
   setActiveDay = activeDay => {
@@ -43,6 +53,15 @@ class App extends Component {
     if (!inArray) opened.push(activeDay.id);
 
     this.setState({ activeDay, opened }, this.saveStateToLocalStorage);
+  };
+
+  setAppState = () => {
+    const id = Number(window.location.pathname.split('').pop());
+    const activeDay = data.calendar.find(item => item.id === id);
+    console.log(activeDay, id);
+    if (activeDay) {
+      this.setState({ activeDay });
+    }
   };
 
   saveStateToLocalStorage = () => {
