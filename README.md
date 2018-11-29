@@ -1,44 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Christmas Calendar
 
-## Available Scripts
+This is the repository for a configurable digital christmas calendar that you can use for your loved ones (or a really, really good friend). You can find a demo
+[here](https://github.com/CityOfZion/neon-wallet/pull/1657), if you can stomach the romantic pictures of me and my girlfriend.
 
-In the project directory, you can run:
+## How it works
 
-### `npm start`
+Begin by forking the repository and cloning down a local copy of the project.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The whole website is powered by a single JSON file. In order to configure the calendar you just need to change the images you want to use in
+the public folder of the project, and configure the json file with the correct information.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Here is an excerpt of the most important json data:
 
-### `npm test`
+```
+{
+  "name": "Heidi",
+  "appPath": "/christmas-calendar",
+  "coverImage": "/christmas.jpg",
+  "calendar": [
+    {
+      "id": 1,
+      "mainImage": "/Australia/1.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "30 min massasje"
+    },
+    {
+      "id": 2,
+      "mainImage": "/Australia/2.jpg",
+      "secondaryImage": "/snipp.png",
+      "text": "Jeg lager middag"
+    }
+```
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+name: Used in the large image in the top of the calendar. Replace with the name of your recipient.
+appPath: The repository name, used for deployment on github pages
+coverImage: The large image at the top. Replace with the image you want.
+calendar: An array of objects denoting a single calendar day:
+    id: Calendar date
+    mainImage: The image you want to show when you open that calendar day
+    text: The text you want to display inside an opened calendar day. For example: "Check your christmas sock for todays gift"
+    secondaryImage: The image at the bottom of the gift section of each opened calendar day
+```
 
-### `npm run build`
+The app uses localstorage to track and save your progress in the calendar. If you open a day by accident, you can reset it by deleting local storage.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Merry christmas!
