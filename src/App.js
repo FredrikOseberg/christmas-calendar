@@ -31,7 +31,7 @@ class App extends Component {
         this.setState({ opened });
       }
 
-      if (window.location.pathname !== '/') {
+      if (window.location.hash !== '') {
         this.setAppState();
       }
     }, 0);
@@ -56,12 +56,16 @@ class App extends Component {
   };
 
   setAppState = () => {
-    const id = Number(window.location.pathname.split('').pop());
+    const id = this.getId();
     const activeDay = data.calendar.find(item => item.id === id);
     console.log(activeDay, id);
     if (activeDay) {
       this.setState({ activeDay });
     }
+  };
+
+  getId = () => {
+    return Number(window.location.hash.match(/\d/gi).join(''));
   };
 
   saveStateToLocalStorage = () => {
