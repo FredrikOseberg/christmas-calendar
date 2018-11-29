@@ -9,7 +9,7 @@ class Jumbotron extends Component {
       <div
         className="jumbotron"
         style={{
-          backgroundImage: `url(${data.coverImage})`,
+          backgroundImage: `url(${process.env.PUBLIC_URL}${data.coverImage})`,
           backgroundSize: 'cover',
           minHeight: '90vh'
         }}

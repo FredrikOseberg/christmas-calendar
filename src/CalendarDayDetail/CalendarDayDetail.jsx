@@ -15,13 +15,17 @@ class CalendarDayDetail extends Component {
             <div className="calendar-day-detail__box">
               <div className="calendar-day-detail__left-container">
                 <h1>Luke {id}</h1>
-                <img src={mainImage} alt="calendar" className="calendar-day-detail__main-image" />
+                <img
+                  src={process.env.PUBLIC_URL + mainImage}
+                  alt="calendar"
+                  className="calendar-day-detail__main-image"
+                />
               </div>
               <div className="calendar-day-detail__right-container">
                 <img src={giftIcon} alt="gift" className="calendar-day-detail__gift-icon" />
                 <p className="calendar-detail__text">{text}</p>
                 <img
-                  src={secondaryImage}
+                  src={process.env.PUBLIC_URL + secondaryImage}
                   alt="calendar"
                   className="calendar-day-detail__secondary-image"
                 />
