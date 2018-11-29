@@ -58,7 +58,6 @@ class App extends Component {
   setAppState = () => {
     const id = this.getId();
     const activeDay = data.calendar.find(item => item.id === id);
-    console.log(activeDay, id);
     if (activeDay) {
       this.setState({ activeDay });
     }
