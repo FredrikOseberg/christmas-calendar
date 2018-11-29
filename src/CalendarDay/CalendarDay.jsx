@@ -6,7 +6,7 @@ import heartIcon from '../images/icons/heart.svg';
 class CalendarDay extends Component {
   handleClick = () => {
     const { setActiveDay, id, mainImage, secondaryImage, text } = this.props;
-    window.history.pushState({}, '', `luke${id}`);
+    window.history.pushState({}, '', `#luke${id}`);
     setActiveDay({ id, mainImage, secondaryImage, text });
   };
 
