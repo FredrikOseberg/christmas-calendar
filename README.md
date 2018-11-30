@@ -43,6 +43,14 @@ calendar: An array of objects denoting a single calendar day:
     secondaryImage: The image at the bottom of the gift section of each opened calendar day
 ```
 
+## Deploy
+
+To deploy to github pages, run the following command:
+
+```
+npm run deploy
+```
+
 The app uses localstorage to track and save your progress in the calendar. If you open a day by accident, you can reset it by deleting local storage.
 
 Merry christmas!
