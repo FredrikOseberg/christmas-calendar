@@ -52,6 +52,7 @@
 .calendar-detail__text {
   font-size: 3rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .calendar-day-detail__button {
