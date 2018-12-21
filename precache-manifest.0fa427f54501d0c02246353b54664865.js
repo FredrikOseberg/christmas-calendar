@@ -24,19 +24,19 @@ self.__precacheManifest = [
     "url": "/christmas-calendar/static/js/runtime~main.60437ad4.js"
   },
   {
-    "revision": "8d76be2107a26e02e9ff",
-    "url": "/christmas-calendar/static/js/main.8d76be21.chunk.js"
+    "revision": "25488575b4c9fd694901",
+    "url": "/christmas-calendar/static/js/main.25488575.chunk.js"
   },
   {
     "revision": "e510b63d084a803de71b",
     "url": "/christmas-calendar/static/js/1.e510b63d.chunk.js"
   },
   {
-    "revision": "8d76be2107a26e02e9ff",
+    "revision": "25488575b4c9fd694901",
     "url": "/christmas-calendar/static/css/main.87c3f464.chunk.css"
   },
   {
-    "revision": "2fa36be9e591bb3b628567eb699659af",
+    "revision": "babf9c01b72daa22710970dcf4933680",
     "url": "/christmas-calendar/index.html"
   }
 ];
