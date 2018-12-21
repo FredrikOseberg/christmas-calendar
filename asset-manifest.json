@@ -1,7 +1,7 @@
 {
   "main.css": "/christmas-calendar/static/css/main.87c3f464.chunk.css",
-  "main.js": "/christmas-calendar/static/js/main.25488575.chunk.js",
-  "main.js.map": "/christmas-calendar/static/js/main.25488575.chunk.js.map",
+  "main.js": "/christmas-calendar/static/js/main.850bdf81.chunk.js",
+  "main.js.map": "/christmas-calendar/static/js/main.850bdf81.chunk.js.map",
   "static/js/1.e510b63d.chunk.js": "/christmas-calendar/static/js/1.e510b63d.chunk.js",
   "static/js/1.e510b63d.chunk.js.map": "/christmas-calendar/static/js/1.e510b63d.chunk.js.map",
   "runtime~main.js": "/christmas-calendar/static/js/runtime~main.60437ad4.js",
@@ -13,6 +13,6 @@
   "static/media/gift.svg": "/christmas-calendar/static/media/gift.ce47d7f7.svg",
   "static/css/main.87c3f464.chunk.css.map": "/christmas-calendar/static/css/main.87c3f464.chunk.css.map",
   "index.html": "/christmas-calendar/index.html",
-  "precache-manifest.0fa427f54501d0c02246353b54664865.js": "/christmas-calendar/precache-manifest.0fa427f54501d0c02246353b54664865.js",
+  "precache-manifest.1239387058f79119da221bd1c3399984.js": "/christmas-calendar/precache-manifest.1239387058f79119da221bd1c3399984.js",
   "service-worker.js": "/christmas-calendar/service-worker.js"
 }
